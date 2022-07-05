@@ -18,5 +18,5 @@ public:
 
 	void insert(string data);
 
-	void traversalTree(Node* Root, string& Data, string& CurrentString, vector<string>& WordList, int DataLength);
+	void traversalTree(Node* root, string& data, string& currentString, vector<string>& wordList, int dataLength);
 };

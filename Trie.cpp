@@ -13,7 +13,7 @@ void Trie::insert(string newKey) {
 	Node* tmp = root;
 	for (int i = 0; i < newKey.size(); i++) {
 		int ascii = newKey[i] - 'a';
-		if (tmp->children[i] != nullptr)
+		if (tmp->children[ascii] != nullptr)
 			tmp = tmp->children[ascii];
 		else {
 			tmp->children[ascii] = new Node();
